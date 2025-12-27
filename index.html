@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestoreID - Jasa Pemulihan Akun Sosmed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Restore<span class="text-gray-800">ID</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#layanan" class="hover:text-blue-600">Layanan</a>
+                <a href="#harga" class="hover:text-blue-600">Harga</a>
+                <a href="#cara-kerja" class="hover:text-blue-600">Cara Kerja</a>
+            </div>
+            <a href="#harga" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Akun Sosmed Kena Hack? <br><span class="text-blue-600">Kami Punya Solusinya.</span></h1>
+        <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Pulihkan akun Instagram, Facebook, dan TikTok Anda dengan bantuan tim ahli. Aman, terpercaya, dan bayar hanya jika berhasil.</p>
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Security" class="rounded-xl shadow-2xl mx-auto mb-10 w-full max-w-2xl">
+    </header>
+
+    <section id="layanan" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Layanan Pemulihan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border rounded-xl hover:shadow-xl transition">
+                    <i class="fab fa-instagram text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Instagram Recovery</h3>
+                    <p class="text-gray-600">Hacked, Disabled, atau Lupa Verifikasi Dua Langkah (2FA).</p>
+                </div>
+                <div class="p-8 border rounded-xl hover:shadow-xl transition">
+                    <i class="fab fa-facebook text-4xl text-blue-700 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Facebook Recovery</h3>
+                    <p class="text-gray-600">Sesi terkunci, akun dibajak, atau masalah login email.</p>
+                </div>
+                <div class="p-8 border rounded-xl hover:shadow-xl transition">
+                    <i class="fab fa-tiktok text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">TikTok Recovery</h3>
+                    <p class="text-gray-600">Pemulihan akun yang terkena suspend atau ganti nomor HP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Pilih Paket Pemulihan</h2>
+            <p class="text-gray-600 mb-12">Semua transaksi menggunakan sistem Escrow (Aman)</p>
+            
+            <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-blue-600">
+                <div class="bg-blue-600 py-4 text-white font-bold uppercase tracking-widest">Paling Populer</div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-2">Jasa Full Recovery</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 150.000 <span class="text-sm text-gray-500 font-normal">/akun</span></div>
+                    <ul class="text-left space-y-4 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Pengerjaan 1x24 Jam</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Garansi Uang Kembali</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Konsultasi Keamanan</li>
+                    </ul>
+
+                    <div class="border-t pt-6">
+                        <p class="text-sm font-semibold mb-4">Metode Pembayaran Tersedia:</p>
+                        <div class="grid grid-cols-4 gap-2 mb-6 grayscale opacity-70">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_dana_blue.svg" alt="Dana">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_ovo_purple.svg" alt="OVO">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" alt="Gopay">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Central_Asia.svg" alt="BCA">
+                        </div>
+                        <button onclick="orderViaWA()" class="w-full bg-green-500 text-white font-bold py-3 rounded-lg hover:bg-green-600 flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Bayar & Proses Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p>&copy; 2024 RestoreID Jasa Pemulihan. Terpercaya & Amanah.</p>
+    </footer>
+
+    <script>
+        function orderViaWA() {
+            const phone = "6281234567890"; // GANTI DENGAN NO WA ANDA
+            const message = "Halo Admin, saya ingin pesan jasa pemulihan akun. Berapa total biaya dan nomor rekeningnya?";
+            window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
